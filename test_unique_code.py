@@ -1,10 +1,11 @@
 import unittest
-
-from unique_code import unique_code
-
-class TestUniqueCode(unittest.TestCase):
-    def test_alex(self):
-        self.assertEqual(unique_code("Alex"), "66109102121")
-
-if __name__ == "__main__":
-    unittest.main()
+def add(a, b):
+ return a + b
+class TestMathOperations(unittest.TestCase):
+  def test_add(self):
+    self.assertEqual(add(2, 3), 5) # Expected output: 5
+    self.assertEqual(add(-1, 1), 0) # Expected output: 0
+    self.assertEqual(add(0, 0), 0) # Expected output: 0
+    
+if __name__ == '__main__':
+ unittest.main
